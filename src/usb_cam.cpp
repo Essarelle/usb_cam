@@ -360,7 +360,7 @@ UsbCam::UsbCam()
 }
 UsbCam::~UsbCam()
 {
-  shutdown();
+  ros::shutdown();
 }
 
 int UsbCam::init_mjpeg_decoder(int image_width, int image_height)
